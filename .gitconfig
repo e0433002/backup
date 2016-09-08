@@ -1,0 +1,18 @@
+[user]
+	name = Leo Lee
+	email = LeoLee@hipad.com
+[color]
+	ui = auto
+[commit]
+	template = /home/user/.hipad-commit/.gittemplate
+[core]
+	editor = ~/.hipad-commit/hipad-commit.sh && vim
+[alias]
+	b = branch
+    s = show
+	st = status
+	ch = checkout
+    chp = cherry-pick
+	lg = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+[rerere]
+	enabled = false
