@@ -1,0 +1,27 @@
+09-08 16:42:51.305: E/AndroidRuntime(16099): FATAL EXCEPTION: AsyncTask #2
+09-08 16:42:51.305: E/AndroidRuntime(16099): Process: com.android.gallery3d, PID: 16099
+09-08 16:42:51.305: E/AndroidRuntime(16099): java.lang.RuntimeException: An error occurred while executing doInBackground()
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.os.AsyncTask$3.done(AsyncTask.java:309)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:354)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at java.util.concurrent.FutureTask.setException(FutureTask.java:223)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at java.util.concurrent.FutureTask.run(FutureTask.java:242)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.os.AsyncTask$SerialExecutor$1.run(AsyncTask.java:234)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1113)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:588)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at java.lang.Thread.run(Thread.java:818)
+09-08 16:42:51.305: E/AndroidRuntime(16099): Caused by: java.lang.IllegalArgumentException: You cannot keep your settings in the secure settings.
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:165)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.database.DatabaseUtils.readExceptionFromParcel(DatabaseUtils.java:135)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.content.ContentProviderProxy.call(ContentProviderNative.java:646)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.provider.Settings$NameValueCache.putStringForUser(Settings.java:1322)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.provider.Settings$System.putStringForUser(Settings.java:1672)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.provider.Settings$System.putIntForUser(Settings.java:1777)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.provider.Settings$System.putInt(Settings.java:1771)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at com.android.gallery3d.filtershow.crop.CropActivity$BitmapIOTask.createLockPaperFile(CropActivity.java:806)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at com.android.gallery3d.filtershow.crop.CropActivity$BitmapIOTask.saveToLockPaper(CropActivity.java:789)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at com.android.gallery3d.filtershow.crop.CropActivity$BitmapIOTask.doInBackground(CropActivity.java:779)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at com.android.gallery3d.filtershow.crop.CropActivity$BitmapIOTask.doInBackground(CropActivity.java:507)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at android.os.AsyncTask$2.call(AsyncTask.java:295)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	at java.util.concurrent.FutureTask.run(FutureTask.java:237)
+09-08 16:42:51.305: E/AndroidRuntime(16099): 	... 4 more
+

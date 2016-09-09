@@ -1,0 +1,11 @@
+<string name="quick_settings_power_save_action_normal">Normal</string>
+<string name="quick_settings_power_save_action_battery_saver" >"Battery Saver"</string>
+
+grep --includ strings.xml -r '>[Nn]ormal' .
+grep --includ strings.xml -r '>[Ss]tandard' .
+grep --includ strings.xml -r '>[Cc]ommon' .
+
+grep --include cm_strings.xml -r 'perf_profile_bal'
+grep --include strings.xml -r '"battery_saver"' | sed 's/\/strings.xml//g' | sed 's/msgid="[0-9]*"//g' | sed 's/ /\n/' | sort > ~/batterySaver.txt
+cat ~/batterySaver.txt | sed /s/    /\n/    // first four space replace to \n
+
